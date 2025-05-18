@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload healthcare_dataset.csv</title>
+</head>
+<body>
+  <h2>Upload healthcare_dataset.csv để phân tích</h2>
+  {% if error %}
+    <p style="color: red;">{{ error }}</p>
+  {% endif %}
+  <form method="post" enctype="multipart/form-data">
+    <input type="file" name="file" accept=".csv">
+    <input type="submit" value="Upload">
+  </form>
+</body>
+</html>
