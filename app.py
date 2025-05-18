@@ -7,7 +7,8 @@ from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 app.secret_key = 'your-secret-key'  # cần để dùng session
-app.config['MAX_CONTENT_LENGTH'] = 2 * 1024 * 1024  # Giới hạn file 2MB
+app.config['MAX_CONTENT_LENGTH'] = 32 * 1024 * 1024  # 32 MB
+
 
 UPLOAD_FOLDER = "uploads"
 REPORT_FOLDER = "reports"
