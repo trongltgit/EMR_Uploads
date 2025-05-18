@@ -5,3 +5,4 @@ ydata-profiling==4.6.4
 numpy==1.25.2
 matplotlib==3.8.4
 scikit-learn==1.4.2
+gunicorn==21.2.0
