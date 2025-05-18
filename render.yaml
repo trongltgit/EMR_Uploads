@@ -1,9 +1,7 @@
 services:
   - type: web
-    name: emr-uplodas
+    name: flask-emr-report
     env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app
-    envVars:
-      - key: FLASK_ENV
-        value: production
+    buildCommand: ""
+    startCommand: "python app.py"
+    plan: free
